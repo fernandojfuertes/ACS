@@ -31,11 +31,6 @@ body {
     flex-direction: column;
 }
 
-body main .container-fluid .row .texto-index,
-body main .container-fluid .row .texto-about-me {
-    padding-left: 390px;
-}
-
 body main .container-fluid .row div h1 {
     margin-top: 90px;
 }
@@ -57,4 +52,13 @@ main div .negrita-naranja {
 
 form {
     width: 40%;
+}
+
+/*Media Queries*/
+
+@media (max-width: 991px){
+    body main .container-fluid .row .texto-index,
+    body main .container-fluid .row .texto-about-me {
+        padding-left: 390px;
+    }
 }
