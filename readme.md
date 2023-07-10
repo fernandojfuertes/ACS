@@ -41,8 +41,10 @@ _Nota:_ Tanto la paleta de colores, como fuentes y estilos en general serán (o 
 ***
 ***
 # PreEntrega2+Fuertes - 10 de Julioo de 2023
-Para esta segunda entrega utilizaré el framework de bootstrap para generar los componentes del sitio web.
-## Problemas actuales:
+Para esta segunda entrega utilizaré el framework de bootstrap para generar los componentes del sitio web. Mi archivo de estilos cambió significativamente al utilizar este framework.
+
+## Problemas actuales:                                                                                                                                                                  
+- Estoy tratando de resolver que el footer quede pegado "sticky" al fondo y la página no tenga scroll
+- Tengo un problema con las imagenes de index.html y about-me.html
 - No estoy pudiendo sobre escribir estilos como fuente o color de texto, y no quiero caer en el vicio de usar !important (además que no siempre lo respeta)
 - No sé bien porqué en la sección de Planes las tarjetas se posicionan una debajo de otra
-- Tengo un problema con las imagenes de index.html y about-me.html
