@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Enlace interno y relativo al archivo de estilos, almacenado dentro de la carpeta css-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--Enlaces internos y relativos a los archivos de fuente, almacenados dentro de la carpeta fonts-->
+    <link rel="preload" href="fonts/SyntaxLTStd-Bold.otf">
+    <link rel="preload" href="fonts/SyntaxLTStd-Roman.otf">
+    <title>Agustín Scirica - Medifé</title>
+</head>
+<!--Etiqueta que contiene al cuerpo principal del archivo html-->
+<body>
+    <!--Etiqueta utilizda para desarrollar la barra de navegación. La misma contiene un id para poder ir al principio del documento-->
+    <header id="top">
+        <h1>ACS</h1>
+        <!--Barra de navegación. Aun le falta darle estilo. No se terminó ya que no hemos visto de qué manera en el curso-->
+        <nav>
+            <ul>
+                <li>home</li>
+                <!--Enlaces internos y relativos a los archivos html de las 4 vistas restantes-->
+                <li><a href="views/about-me.html">sobre mi</a></li>
+                <li><a href="views/plans.html">planes</a></li>
+                <li><a href="views/news.html">noticias</a></li>
+                <li><a href="views/contact-me.html">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Etiqueta utilizada para desarrollar el contenido principal del cuerpo html-->
+    <main>
+        <!--La idea del estilo para lo que sigue será que el texto esté por sobre la imagen de fondo. No sé si utilizar la imagen como fondo del html (y posicionar el párrafo con css) o si agregarla como un contenedor (y posicionar ambos con css)-->
+        <h2>¡Bienvenidos!</h2>
+        <!--Utilizo estilos en linea para poder posicionar temporalmente el texto por la izquierda de la foto. Será reemplazado cuando terminemos de ver flexbox en el curso-->
+        <div style="display: inline-block; width: 50%;">
+            <!--Utilizo texto 'dummy' hasta tanto defina el contenido del párrafo-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quos deleniti esse, rerum vero recusandae. Enim, inventore repellat maxime praesentium unde sit eveniet voluptate obcaecati quibusdam dolorum odit iure beatae!
+            Molestias veniam reiciendis enim recusandae rem aut vero ab quod. Aperiam corporis facilis, odio facere unde dignissimos quisquam numquam vitae ducimus magni repellendus deserunt eius perspiciatis provident non deleniti repudiandae!
+            Dicta, accusamus dolore aspernatur eveniet id numquam vitae corporis laudantium. Dolores magnam tenetur, sequi ad necessitatibus aspernatur totam iste quae aliquam quia impedit expedita itaque tempore natus tempora praesentium nesciunt.</p>
+        </div>
+        <!--La siguiente imagen tiene un texto alternativo, en caso que la foto no pueda ser mostrada en el explorador, o bien, para personas con discapacidad-->
+        <img src="img/family 2.jpg" alt="Black and white photo of a family of 3">
+    </main>
+    <!--Etiqueta para desarrolla el pie de la página-->
+    <footer>
+        <h3>Todos los derechos reservados</h3>
+        <!--Link para volver al principio del documento utilizando una llamada al id top-->
+        <a href="#top">Volver al inicio</a>
+    </footer>
+</body>
+</html>
