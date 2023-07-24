@@ -110,18 +110,23 @@ section {
     height: calc(100vh - 80px);
 }
 
-.bienvenida {
+.body-index {
     max-width: 28%;
     margin-left: 100px;
     padding-top: 70px;
 }
 
-.bienvenida h1 {
+.body-index h1,
+.body-sobre-mi h1 {
     font-size: 4rem;
 }
 
-.bienvenida p {
+.body-index p {
     max-width: 85%;
+}
+
+.body-index p,
+.body-sobre-mi p {
     font-size: 1.5rem;
     line-height: 34px;
     padding-top: 20px;
@@ -129,7 +134,7 @@ section {
     margin-bottom: 40px
 }
 
-.bienvenida a,
+.body-index a,
 .body-contacto .lado-derecho form input,
 .boton a {
     background: #eb5f0a;
@@ -140,11 +145,42 @@ section {
     cursor: pointer;
 }
 
-.bienvenida a.active,
-.bienvenida a:hover,
+.body-index a.active,
+.body-index a:hover,
 .body-contacto .lado-derecho form input.active,
 .body-contacto .lado-derecho form input:hover {
     background: #be4801;
+}
+
+/*Estilos para about-me.thml*/
+.body-sobre-mi {
+    display: flex;
+    flex-direction: row;
+}
+
+.body-sobre-mi .sobre-mi-der {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 140px;
+}
+
+.body-sobre-mi .sobre-mi-izq {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.body-sobre-mi .sobre-mi-izq img {
+    width: 100%;
+    height: calc(100vh - 80px); /* Restamos 80px para el tamaño de la cabecera */
+    object-fit: cover;
 }
 
 /*Estilos para plans.html*/
@@ -327,17 +363,17 @@ section {
         left: 0;
     }
 
-    .bienvenida {
+    .body-index {
         max-width: 80%;
         margin-left: 15px;
         padding-top: 20px;
     }
 
-    .bienvenida h1 {
+    .body-index h1 {
         font-size: 2.6rem;
     }
 
-    .bienvenida p {
+    .body-index p {
         font-size: 1rem;
         line-height: 24px;
         padding-top: 20px;
@@ -403,17 +439,17 @@ section {
     }
 
 
-    .bienvenida {
+    .body-index {
         max-width: 80%;
         margin-left: 25px;
         padding-top: 40px;
     }
 
-    .bienvenida h1 {
+    .body-index h1 {
         font-size: 2.6rem;
     }
 
-    .bienvenida p {
+    .body-index p {
         max-width: 60%;
         font-size: 1rem;
         line-height: 24px;
