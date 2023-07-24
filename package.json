@@ -1,0 +1,11 @@
+{
+  "name": "acs",
+  "version": "1.0.0",
+  "description": "¡Bienvenid@ al repositorio del proyecto del sitio web de Agustín Scirica, ejecutivo de Medifé (empresa de lider prepaga)! Acá encontrarás toda la información necesaria para comprender el desarrollo de este sitio web.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
