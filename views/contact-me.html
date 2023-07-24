@@ -1,60 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="preload" href="../fonts/SyntaxLTStd-Bold.otf">
-    <link rel="preload" href="../fonts/SyntaxLTStd-Roman.otf">
-    <title>Agustín Scirica - Contacto</title>
+    <script src="https://kit.fontawesome.com/a22c32b01e.js" crossorigin="anonymous"></script>
+    <title>Agustín Scirica | Asesor Medifé</title>
 </head>
+
 <body>
-    <header id="top">
-        <h1>ACS</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">home</a></li>
-                <li><a href="../views/about-me.html">sobre mi</a></li>
-                <li><a href="../views/plans.html">planes</a></li>
-                <li><a href="../views/news.html">noticias</a></li>
-                <li>contacto</li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!--Creación del formulario de contacto-->
-        <form>
-            <!--La etiqueta fildset enmarca los campos del formulario-->
-            <fieldset>
-                <!--Etiqueta para darle un título al formulario-->
-                <legend>¿Tenés alguna duda?</legend>
-                <!--Etiqueta div "comodín" que contiene el campo para ingresar Nombre-->
-                <div>
-                    <!--Las etiquetas input son aquellas que se utilizan para los diferentes elementos de un formulario. El type/tipo le da el "sentido" a cada campo. A título de ejemplificar, el tipo 'email' espera que se le ingrese un correo electrónico. Ésta en particular, además, agrega una validación por html, la cual chequea que el correo haya sido escrito de manera correcta-->
-                    <input type="text" placeholder="Nombre completo">
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="check-button">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">ACS Medifé</label>
+
+        <ul>
+            <li><a href="../index.html">inicio</a></li>
+            <li><a href="../views/about-me.html">sobre mi</a></li>
+            <li><a href="../views/plans.html">planes</a></li>
+            <li><a href="../views/news.html">noticias</a></li>
+            <li><a href="../views/contact-me.html" class="active">contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="body-contacto">
+        <div class="formulario">
+            <div class="contenido">
+                <div class="lado-izquierdo">
+                    <div class="address detalle">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="titulo">Address</div>
+                        <div class="subtitulo1">Calle Falsa 123</div>
+                        <div class="subtitulo2">C.A.B.A.</div>
+                    </div>
+                    <div class="phone detalle">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="titulo">Phone</div>
+                        <div class="subtitulo1">+5491128659835</div>
+                        <div class="subtitulo2">Celular</div>
+                    </div>
+                    <div class="email detalle">
+                        <i class="fas fa-envelope"></i>
+                        <div class="titulo">Email</div>
+                        <div class="subtitulo1">ascirica@medife.com.ar</div>
+                        <div class="subtitulo2">Laboral</div>
+                    </div>
                 </div>
-                <div>
-                    <input type="email" placeholder="Correo electrónico">
+                <div class="lado-derecho">
+                    <div class="titulo-formulario">Enviame tu mensaje</div>
+                    <p>Si querés consultarme algo más, no dudes en escribime un mensaje</p>
+
+                    <form action="#">
+                        <div class="caja-input">
+                            <input type="text" placeholder="Tu nombre">
+                        </div>
+                        <div class="caja-input">
+                            <input type="email" placeholder="Tu correo electrónico">
+                        </div>
+                        <div class="caja-input caja-mensaje">
+                            <textarea name="" id="" cols="21" rows="10"></textarea>
+                        </div>
+                        <div class="boton">
+                            <input type="button" value="¡Enviar!">
+                        </div>
+                    </form>
                 </div>
-                <div>
-                    <input type="tel" placeholder="Celular">
-                </div>
-                <div>
-                    <textarea name="" id="" cols="21" rows="10"></textarea>
-                </div>
-                <div>
-                    <input type="reset" value="Restablecer">
-                </div>
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-            </fieldset>
-        </form>
-    </main>
-    <footer>
-        <h3>Todos los derechos reservados</h3>
-        <a href="#top">Volver al inicio</a>
-    </footer>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
